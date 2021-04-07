@@ -1,3 +1,6 @@
+// podemos criar uma exceção polimorfica e cobrir um "range" maior de exceções.
+// basta lançar um catch generico da seguinte forma catch(Exception ex)
+
 public class Fluxo {
 
     public static void main(String[] args) {
@@ -5,7 +8,7 @@ public class Fluxo {
         
         try {
         	metodo1();
-        } catch(ArithmeticException | NullPointerException | MinhaException ex) {
+        } catch(Exception ex) {
         	String msg = ex.getMessage();
         	System.out.println("Exception: " + msg);
         	ex.printStackTrace();
