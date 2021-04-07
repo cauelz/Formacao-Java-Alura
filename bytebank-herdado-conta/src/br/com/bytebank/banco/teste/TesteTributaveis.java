@@ -1,3 +1,8 @@
+package br.com.bytebank.banco.teste;
+
+import br.com.bytebank.banco.modelo.CalculadoraDeImposto;
+import br.com.bytebank.banco.modelo.ContaCorrente;
+import br.com.bytebank.banco.modelo.SeguroDeVida;
 
 public class TesteTributaveis {
 
