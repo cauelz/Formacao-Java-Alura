@@ -6,10 +6,13 @@ public class TesteSaca {
 		Conta conta = new ContaCorrente(123, 321);
 		
 		conta.deposita(200.00);
-		conta.saca(210.0);
-		
-		System.out.println(conta.getSaldo());
 
+		try {
+			conta.saca(210.0);
+		} catch (SaldoInsuficienteException ex) {
+			System.out.println("Ex: " + ex.getMessage());
+		}
+		System.out.println(conta.getSaldo());
 	}
 
 }
