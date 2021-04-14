@@ -1,42 +1,20 @@
 package br.com.bytebank.banco.teste;
 
-import br.com.bytebank.banco.modelo.Cliente;
-import br.com.bytebank.banco.modelo.ContaCorrente;
-import br.com.bytebank.banco.modelo.ContaPoupanca;
-
 public class Teste {
 
+	// Array[]
 	public static void main(String[] args) {
 		
-		System.out.println(3);
-		System.out.println("Olá");
-		System.out.println(false);
+		// int idades []:
+		int [] idades =  new int [5]; // ele já inicializa o array com os valores padroes, ou seja, 0.
+
+		for(int i = 0; i < idades.length; i++) {
+			idades[i] = i * i;
+		}
 		
-		Object cc = new ContaCorrente(222, 333);
-		Object cp = new ContaPoupanca(333, 444);
-		Object cliente = new Cliente();
-		
-		System.out.println(cc.toString());
-		System.out.println(cp);
-		
-		println(cc);
-	}
-	
-	static void println() {
-	}
-	
-	static void println(int a) {
-	}
-	
-	static void println(boolean bool) {
-	}
-	
-	static void println(Object referencia) {
+		for(int i = 0; i < idades.length; i++) {
+			System.out.println(idades[i]);
+		}
 		
 	}
-//	static void println(???? referencia) {
-//		
-//	}
-	
-	
 }
