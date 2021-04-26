@@ -3,7 +3,7 @@ package br.com.bytebank.banco.teste.util;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Test {
+public class TestWrapperInteger {
 
 	public static void main(String[] args) {
 		
